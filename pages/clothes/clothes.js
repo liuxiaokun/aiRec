@@ -94,6 +94,17 @@ Page({
                 wx.hideLoading()
                 console.log(e.data)
                 let array = e.data.data;
+                let code = e.data.code
+
+                if(code === '-1') {
+                  wx.showToast({
+                    title: '服务暂不可用',
+                    icon: 'success',
+                    duration: 1000,
+                    mask: true
+                  })
+                  return
+                }
 
                 _this.setData({
                   count: array.length

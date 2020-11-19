@@ -92,6 +92,17 @@ Page({
               success(e) {
                 wx.hideLoading()
                 console.log(e.data)
+                let code = e.data.code
+
+                if(code === '-1') {
+                  wx.showToast({
+                    title: '服务暂不可用',
+                    icon: 'success',
+                    duration: 1000,
+                    mask: true
+                  })
+                  return
+                }
                 let array = e.data.data;
 
                 _this.setData({
@@ -131,6 +142,9 @@ Page({
                   _this.mycanvas.stroke()
                 }
                 _this.mycanvas.draw()
+              },
+              fail(e) {
+                console.log('fail')
               }
             })
           }

@@ -7,8 +7,8 @@ Page({
   data: {
     canvas_width: 0,
     canvas_height: 0,
-    pic_width:1,
-    phone_width:1,
+    pic_width: 1,
+    phone_width: 1,
     count: "",
     mycanvas: {},
     woodArray: [],
@@ -53,7 +53,7 @@ Page({
             _this.setData({
               pic_width: response.width
             })
-            
+
             //_this.mycanvas.drawImage(res.tempFilePaths[0], 0, 0, response.width, response.height, 0, 0, response.width, response.height)
           }
         })
@@ -68,7 +68,8 @@ Page({
             _this.setData({
               phone_width: clientWidth
             });
-        }})
+          }
+        })
 
         wx.getFileSystemManager().readFile({
           filePath: res.tempFilePaths[0],
@@ -79,7 +80,7 @@ Page({
               key: "woodPic",
               data: resp.data
             })
-            wx.showLoading({title: '识别中'})
+            wx.showLoading({ title: '识别中' })
             wx.request({
               url: 'https://wx.ai.huadong.net/api/detect/base64/ai/6', //路由
               data: {
@@ -92,6 +93,17 @@ Page({
               success(e) {
                 wx.hideLoading()
                 console.log(e.data)
+                let code = e.data.code
+
+                if(code === '-1') {
+                  wx.showToast({
+                    title: '服务暂不可用',
+                    icon: 'success',
+                    duration: 1000,
+                    mask: true
+                  })
+                  return
+                }
                 let array = e.data.data;
 
                 _this.setData({
@@ -101,11 +113,11 @@ Page({
                 //   key: "woodArray",
                 //   data: woodArray
                 // })
-                console.log( _this.data.phone_width + ":::::" + _this.data.pic_width)
+                console.log(_this.data.phone_width + ":::::" + _this.data.pic_width)
                 for (let i = 0; i < array.length; i++) {
                   let rect = array[i].rect
 
-                  let scale = _this.data.phone_width/_this.data.pic_width
+                  let scale = _this.data.phone_width / _this.data.pic_width
 
                   let centerX = (rect[0] + rect[2]) / 2 * scale
                   let centerY = (rect[1] + rect[3]) / 2 * scale
@@ -125,6 +137,14 @@ Page({
                   _this.mycanvas.stroke()
                 }
                 _this.mycanvas.draw()
+              },
+              fail(e) {
+                wx.showToast({
+                  title: '服务暂不可用',
+                  icon: 'fail',
+                  duration: 1000,
+                  mask: true
+                })
               }
             })
           }
