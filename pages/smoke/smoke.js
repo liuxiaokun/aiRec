@@ -104,7 +104,7 @@ Page({
                   })
                   return
                 }
-                let array = e.data.data;
+                let array = e.data.data.result;
 
                 _this.setData({
                   count: array.length
@@ -127,6 +127,7 @@ Page({
                   let lenY = (rect[3] - rect[1]) / 2 / 2 * scale
 
                   _this.mycanvas.setStrokeStyle('red')
+                  _this.mycanvas.setLineWidth(2)
                   //竖线
                   _this.mycanvas.moveTo(centerX, centerY - lenY)
                   _this.mycanvas.lineTo(centerX, centerY + lenY)

@@ -92,7 +92,7 @@ Page({
               success(e) {
                 wx.hideLoading()
                 console.log(e.data)
-                let array = e.data.data;
+                let array = e.data.data.result;
                 let code = e.data.code
 
                 if(code === '-1') {

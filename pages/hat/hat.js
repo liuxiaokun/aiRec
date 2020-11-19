@@ -103,7 +103,7 @@ Page({
                   })
                   return
                 }
-                let array = e.data.data;
+                let array = e.data.data.result;
 
                 _this.setData({
                   count: array.length
