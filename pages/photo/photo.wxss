@@ -1,0 +1,7 @@
+/* pages/photo/photo.wxss */
+.takePhto {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  background-color: cornflowerblue;
+}

@@ -1,0 +1,8 @@
+<view class="txt">识别结果：{{count}}</view>
+<div>
+  <image src="{{imagesrc}}" mode="widthFix" style="width:100%; height:auto; position:fixed; z-index:0">
+  </image>
+
+  <canvas canvas-id='my_canvas' bindtouchstart="touchStart" class="canvas"
+    style="width:{{canvas_width}}px; height:{{canvas_height}}px; position:fixed; z-index:3"></canvas>
+</div>

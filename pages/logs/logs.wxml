@@ -1,0 +1,5 @@
+<!--logs.wxml-->
+<view class='center colu'>
+  <canvas style='width:{{canvas_width}}px;height:{{canvas_height}}px' canvas-id='my_canvas'></canvas>
+  <!-- <image mode='aspectFill' style='width:{{canvas_width}}px;height:{{canvas_height}}px;margin-top:10px' src='{{img}}'></image>-->
+</view>

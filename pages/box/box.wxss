@@ -1,0 +1,18 @@
+.txt {
+  color: #17233d;
+  padding-left: 10px;
+  margin-top: 3px;
+  padding-right: 10px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  background-color: #f8f8f9;
+  border-bottom: #dcdee2;
+  margin-left: 6px;
+  margin-right: 6px;
+  font-size: 35rpx;
+  margin-bottom: 6px;
+}
+
+.bottom {
+  margin-bottom: 20px;
+}

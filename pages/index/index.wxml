@@ -1,0 +1,109 @@
+<view class="container">
+
+  <view class="row">
+    <view class="detect-item-l" bindtap="woodRec">
+      <view class="img">
+        <cover-image src="../static/wood1.png"></cover-image>
+      </view>
+      <text>原木理货</text>
+    </view>
+    <!-- <view class="detect-item-s">
+      <view class="log">
+      <cover-image src="../static/list.png" style="height:80%"></cover-image>
+      </view>
+      <text style="margin-left:5px">清单</text>
+  </view> -->
+
+
+    <view class="detect-item-l" bindtap="cardIdRec">
+      <view class="img">
+        <cover-image src="../static/cardId.png"></cover-image>
+      </view>
+      <text>车牌识别</text>
+    </view>
+
+    <!-- <view class="detect-item-s">
+      <view class="log">
+      <cover-image src="../static/list.png" style="height:80%"></cover-image>
+      </view>
+      <text style="margin-left:5px">清单</text>
+  </view> -->
+    <view class="detect-item-l" bindtap="boxFlagRec">
+      <view class="img">
+        <cover-image src="../static/boxFlag.png"></cover-image>
+      </view>
+      <text>箱标志识别</text>
+    </view>
+    <!-- <view class="detect-item-s">
+    <view class="log">
+      <cover-image src="../static/list.png" style="height:80%"></cover-image>
+      </view>
+      <text style="margin-left:5px">清单</text>
+  </view> -->
+    <view class="detect-item-l" bindtap="boxRec">
+      <view class="img">
+        <cover-image src="../static/box.png"></cover-image>
+      </view>
+      <text>箱号识别</text>
+    </view>
+    <!-- <view class="detect-item-s">
+    <view class="log">
+      <cover-image src="../static/list.png" style="height:80%"></cover-image>
+      </view>
+      <text style="margin-left:5px">清单</text>
+  </view> -->
+  </view>
+  <view class="row">
+    <view class="detect-item-l" bindtap="hatRec">
+      <view class="img">
+        <cover-image src="../static/hat.png"></cover-image>
+      </view>
+      <text>安全帽识别</text>
+    </view>
+    <!-- <view class="detect-item-s">
+    <view class="log">
+      <cover-image src="../static/list.png" style="height:80%"></cover-image>
+      </view>
+      <text style="margin-left:5px">清单</text>
+  </view> -->
+
+
+    <view class="detect-item-l" bindtap="smokeRec">
+      <view class="img">
+        <cover-image src="../static/smoke.png"></cover-image>
+      </view>
+      <text>抽烟检测</text>
+    </view>
+    <!-- <view class="detect-item-s">
+      <view class="log">
+      <cover-image src="../static/list.png" style="height:80%"></cover-image>
+      </view>
+      <text style="margin-left:5px">清单</text>
+  </view> -->
+    <view class="detect-item-l" bindtap="clothesRec">
+      <view class="img">
+        <cover-image src="../static/clothes.png"></cover-image>
+      </view>
+      <text>反光服识别</text>
+    </view>
+    <!-- <view class="detect-item-s">
+    <view class="log">
+      <cover-image src="../static/list.png" style="height:80%"></cover-image>
+      </view>
+      <text style="margin-left:5px">清单</text>
+  </view> -->
+    <view class="detect-item-l" bindtap="fireRec">
+      <view class="img">
+        <cover-image src="../static/fire.png"></cover-image>
+      </view>
+      <text>着火识别</text>
+    </view>
+    <!-- <view class="detect-item-s">
+    <view class="log">
+      <cover-image src="../static/list.png" style="height:80%"></cover-image>
+      </view>
+      <text style="margin-left:5px">清单</text>
+  </view> -->
+  </view>
+
+</view>

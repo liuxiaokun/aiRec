@@ -1,0 +1,55 @@
+/**index.wxss**/
+/* pages/view/testHtml.wxss */
+
+.container{
+  width: 100%;
+  min-height: 500rpx;
+  box-sizing: border-box;
+  padding: 10rpx;
+  display: flex;
+  flex-direction:row;
+}
+.row{
+    width: 50%;
+    min-height: 500rpx;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0 20rpx;
+}
+.detect-item-l{
+  width: 100%;
+  height: 200rpx;
+  background-image: linear-gradient(141deg,#9fb8ad 0%,#1fc8db 51%,#2cb5e8 75%);
+  border-radius: 10rpx;
+  margin-top: 25rpx;
+  text-align: center;
+  position: relative;
+  box-sizing: border-box;
+  padding: 30rpx 0;
+}
+.detect-item-l .img{
+  width: 100rpx;
+  height: 100rpx;
+  margin: 0 auto ;
+}
+.detect-item-l text{
+  color: white;
+}
+.detect-item-s{
+  width: 100%;
+  height: 80rpx;
+  background-image: linear-gradient(141deg,#ce9b4e 0%,#cee452 51%,#97e663 75%);
+  border-radius: 10rpx;
+  margin-top: 15rpx;
+  box-sizing: border-box;
+  padding: 10rpx 50rpx;
+}
+.detect-item-s .log{
+  width: 50rpx;
+  height: 60rpx;
+  float: left;
+}
+.detect-item-s text{
+  color: #fff;
+  line-height: 60rpx;
+}
