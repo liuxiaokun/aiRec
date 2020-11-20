@@ -83,7 +83,8 @@ Page({
             wx.request({
               url: 'https://wx.ai.huadong.net/api/detect/base64/ai/8', //路由
               data: {
-                "img": resp.data
+                "img": resp.data,
+                "openid": wx.getStorageSync('openid')
               },
               method: "POST",
               header: {

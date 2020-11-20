@@ -1,5 +1,5 @@
 <view class="txt">箱号: {{boxNum}}</view>
-<view class="txt bottom">isso号: {{isso}}</view>
+<view class="txt bottom">ISO代码: {{isso}}</view>
 <div>
   <image src="{{imagesrc}}" mode="widthFix" style="width:100%; height:auto; position:fixed; z-index:0">
   </image>
@@ -7,4 +7,5 @@
   <canvas canvas-id='my_canvas' bindtouchstart="touchStart" class="canvas"
     style="width:{{canvas_width}}px; height:{{canvas_height}}px; position:fixed; z-index:3"></canvas>
 </div>
+<view style="position:fixed; bottom:20px; width:100%; left:0px; text-align:center; font-size:14px; color: #515a6e">烟台华东电子科技有限公司</view>
 

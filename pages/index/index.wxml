@@ -106,4 +106,5 @@
   </view> -->
   </view>
 
+  <view style="position:fixed; bottom:20px; width:100%; left:0px; text-align:center; font-size:14px; color: #515a6e">烟台华东电子科技有限公司 鲁ICP备05016100</view>
 </view>

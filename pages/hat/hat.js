@@ -83,7 +83,8 @@ Page({
             wx.request({
               url: 'https://wx.ai.huadong.net/api/detect/base64/ai/5', //路由
               data: {
-                "img": resp.data
+                "img": resp.data,
+                "openid": wx.getStorageSync('openid')
               },
               method: "POST",
               header: {
@@ -105,17 +106,20 @@ Page({
                 }
                 let array = e.data.data.result;
 
-                _this.setData({
-                  count: array.length
-                })
                 // wx.setStorage({
                 //   key: "woodArray",
                 //   data: woodArray
                 // })
                 console.log( _this.data.phone_width + ":::::" + _this.data.pic_width)
+                let count = 0;
                 for (let i = 0; i < array.length; i++) {
                   let rect = array[i].rect
                   let type = array[i].type
+
+                  if(type === 1) {
+                    continue;
+                  }
+                  count++
 
                   let scale = _this.data.phone_width/_this.data.pic_width
 
@@ -141,6 +145,10 @@ Page({
 
                   _this.mycanvas.stroke()
                 }
+
+                _this.setData({
+                  count: count
+                })
                 _this.mycanvas.draw()
               },
               fail(e) {

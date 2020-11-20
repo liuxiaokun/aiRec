@@ -6,3 +6,4 @@
   <canvas canvas-id='my_canvas' bindtouchstart="touchStart" class="canvas"
     style="width:{{canvas_width}}px; height:{{canvas_height}}px; position:fixed; z-index:3"></canvas>
 </div>
+<view style="position:fixed; bottom:20px; width:100%; left:0px; text-align:center; font-size:14px; color: #515a6e">烟台华东电子科技有限公司</view>
