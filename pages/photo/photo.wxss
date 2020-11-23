@@ -1,7 +1,18 @@
 /* pages/photo/photo.wxss */
-.takePhto {
-  width: 100%;
-  text-align: center;
-  padding: 20px;
-  background-color: cornflowerblue;
+.oneBox {
+  border: 3rpx solid #dcdee2;
+  border-radius: 10rpx;
+  padding: 10rpx;
+  margin-left: 5px;
+  margin-top: 5px;
+  margin-right: 5px;
+  background-color: #f8f8f9;
+  color: #515a6e;
+  font-size: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.item_l {
+  margin-top: 5px;
 }

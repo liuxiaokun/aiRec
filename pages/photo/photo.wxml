@@ -1,4 +1,7 @@
-<!--<camera device-position="back" flash="off" binderror="error" style="width: 100%; height: 300px"></camera>-->
-<button class="takePhto" bindtap="draw">拍照</button>
-<!--<image src="data:image/png;base64,{{imgData}}"></image>-->
-<canvas id="myCanvas">111</canvas>
+<view wx:for="{{list}}" wx:for-item="item" wx:key="{{item.id}}" bindtap="itemClick" data-item="{{item}}" dis>
+  <view class="oneBox">
+    <view class="item_l">流水号：{{item.id}}</view>
+    <image class="image" src="{{item.picUrl}}" mode='aspectFill'></image>
+    <view class="item_l">时间：{{item.recTim}}</view>
+  </view>
+</view>

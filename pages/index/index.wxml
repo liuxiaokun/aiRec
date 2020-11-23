@@ -7,14 +7,12 @@
       </view>
       <text>原木理货</text>
     </view>
-    <!-- <view class="detect-item-s">
+    <!-- <view class="detect-item-s" bindtap="woodHistory">
       <view class="log">
-      <cover-image src="../static/list.png" style="height:80%"></cover-image>
+        <cover-image src="../static/list.png" style="height:80%"></cover-image>
       </view>
       <text style="margin-left:5px">清单</text>
-  </view> -->
-
-
+    </view> -->
     <view class="detect-item-l" bindtap="cardIdRec">
       <view class="img">
         <cover-image src="../static/cardId.png"></cover-image>
@@ -106,5 +104,6 @@
   </view> -->
   </view>
 
-  <view style="position:fixed; bottom:20px; width:100%; left:0px; text-align:center; font-size:14px; color: #515a6e">烟台华东电子科技有限公司 鲁ICP备05016100</view>
+  <view style="position:fixed; bottom:20px; width:100%; left:0px; text-align:center; font-size:14px; color: #515a6e">
+    烟台华东电子科技有限公司 鲁ICP备05016100</view>
 </view>

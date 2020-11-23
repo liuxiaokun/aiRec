@@ -74,4 +74,10 @@ Page({
       url: '/pages/wood/wood',
     })
   },
+
+  woodHistory() {
+    wx.navigateTo({
+      url: '/pages/photo/photo?type=WOOD',
+    })
+  },
 })
